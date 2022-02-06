@@ -1,0 +1,63 @@
+.movies_row {
+  overflow: hidden;
+}
+.movie_container {
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+  padding: 30px;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.movie_container::-webkit-scrollbar {
+  display: none;
+}
+.movie_outer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  border: 3px solid rgba(249, 249, 249, 0.1);
+  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
+    rgb(0 0 0 / 69%) 0px 16px 10px -10px;
+}
+.poster {
+  height: 200px;
+  object-fit: contain;
+  margin-right: 15px;
+  transition: 250ms ease-in;
+  border-radius: 4px;
+}
+.small_poster {
+  height: 100px;
+}
+.movies_row h3 {
+  width: 100%;
+}
+.short_dis {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  right: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 30%;
+  padding: 22px;
+  transition: opacity 250ms ease-in;
+  display: flex;
+  justify-content: left;
+  overflow: hidden;
+  box-sizing: content-box;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+}
+/* ////////////////////// hover /////////////////////// */
+.poster_cover {
+  position: relative;
+}
+.poster_cover:hover > .poster {
+  transform: scale(1.25);
+}
+.poster_cover:hover > .short_dis {
+  opacity: 1;
+}
