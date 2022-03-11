@@ -1,8 +1,6 @@
-
 # Disney+ Hotstar -clone
 
 A disney+hotstar clone made using React, Firebase, Firestore, and css.
-
 
 ## Installation
 
@@ -11,8 +9,6 @@ A disney+hotstar clone made using React, Firebase, Firestore, and css.
 - execute command < npm i >
 - npm start
 
-
-
 ## See Deployed App
 
- - https://disney-hotstar-clone-eea62.web.app/detail/633802
+- https://disney-hotstar-clone-eea62.web.app/
